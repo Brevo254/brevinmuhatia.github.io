@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Code & Character</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+
+    <link rel="stylesheet" href="styles/sections/hero.css">
+    <link rel="stylesheet" href="styles/sections/about.css">
+    <link rel="stylesheet" href="styles/sections/skills.css">
+    <link rel="stylesheet" href="styles/sections/projects.css">
+    <link rel="stylesheet" href="styles/sections/playground.css">
+    <link rel="stylesheet" href="styles/sections/contact.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeBtn">Fun Mode 🌈</button>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <!-- Will be populated by JavaScript -->
+    </nav>
+    
+    <main>
+        <!-- Sections will be added in subsequent steps -->
+        <!-- Inside <main>, after <nav> -->
+        <section id="hero" class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="static-text">Hello World, I'm </span>
+            <span class="typing-text"></span>
+        </h1>
+        <p class="hero-subtitle">Computer Science Student | Debugging Life Since 20XX</p>
+        <button class="hero-button" id="scrollDownBtn">Get to Know Me ↓</button>
+    </div>
+    <div class="hero-gradient"></div>
+        </section>
+
+        <!-- After Hero Section -->
+        <section id="about" class="about-section">
+    <div class="about-container">
+        <!-- Left Column (Photo + ID Card) -->
+        <div class="about-photo">
+            <img src="assets/images/your-photo.jpg" alt="Your Name" class="profile-img">
+            <div class="id-card">
+                <h3>Digital ID</h3>
+                <p><strong>Nationality:</strong> [Your Country]</p>
+                <p><strong>Born:</strong> [Birthdate]</p>
+                <p><strong>Location:</strong> [Province, County]</p>
+                <p><strong>Constituency:</strong> [Your Area]</p>
+            </div>
+        </div>
+        
+        <!-- Right Column (Bio + Projects Preview) -->
+        <div class="about-bio">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a Computer Science student who loves turning caffeine into code. When I'm not debugging life, I build things that solve real problems.</p>
+            
+            <div class="projects-preview">
+                <h3>Featured Projects</h3>
+                <div class="project-mini-card">
+                    <span class="project-icon">📱</span>
+                    <p class="project-title">PDFBuks</p>
+                    <p class="project-desc">Made textbooks accessible for 500+ students</p>
+                </div>
+                <!-- Add more mini-cards -->
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <!-- After About Section -->
+        <section id="skills" class="skills-section">
+    <h2>My Toolkit</h2>
+    <div class="skills-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="language">Languages</button>
+        <button class="filter-btn" data-filter="framework">Frameworks</button>
+        <button class="filter-btn" data-filter="tool">Tools</button>
+    </div>
+    
+    <div class="skills-grid">
+        <!-- Skills will be populated by JavaScript -->
+    </div>
+        </section>
+
+        <!-- After Skills Section -->
+        <section id="projects" class="projects-section">
+    <h2>My Creations</h2>
+    <div class="projects-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="progress">In Progress</button>
+    </div>
+    
+    <div class="projects-grid">
+        <!-- Projects populated by JavaScript -->
+    </div>
+        </section>
+
+        <!-- After Projects Section -->
+        <section id="playground" class="playground-section">
+    <h2>Playground</h2>
+    <p class="subtitle">Where I break things for science 🔬</p>
+    
+    <div class="experiments-tabs">
+        <button class="tab-btn active" data-tab="mad-science">Mad Science</button>
+        <button class="tab-btn" data-tab="art-attacks">Art Attacks</button>
+        <button class="tab-btn" data-tab="just-laughs">Just for Laughs</button>
+    </div>
+    
+    <div class="experiments-grid">
+        <!-- Experiments loaded by JavaScript -->
+    </div>
+        </section>
+
+        <!-- After Playground Section -->
+        <section id="contact" class="contact-section">
+    <h2>Let's Chat!</h2>
+    <p class="subtitle">I don't bite... unless you're a bug in my code 🐛</p>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Digital Homing Pigeon</h3>
+            <p>📧: your.email@example.com</p>
+            <p>📱: +123 456 7890</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">🐦</a> <!-- Twitter -->
+                <a href="#" class="social-icon">💻</a> <!-- GitHub -->
+                <a href="#" class="social-icon">🔗</a> <!-- LinkedIn -->
+            </div>
+            
+            <button id="downloadCV" class="cv-btn">
+                📄 Download My CV
+                <span class="tooltip">Human-readable format</span>
+            </button>
+        </div>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+                <span class="focus-border"></span>
+            </div>
+            <!-- More form fields... -->
+            <button type="submit" class="submit-btn">Send Message 🚀</button>
+        </form>
+    </div>
+        </section>
+        <!-- Other sections -->
+    </main>
+    
+    <!-- JavaScript -->
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/components/hero.js" type="module"></script>
+    <script src="scripts/components/skills.js" type="module"></script>
+    <script src="scripts/components/projects.js" type="module"></script>
+    <script src="scripts/components/playground.js" type="module"></script>
+
+</body>
+</html>
